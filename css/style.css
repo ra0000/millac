@@ -1,0 +1,108 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 100%;
+    background-color: #1f1f1f;
+    color: #f1f1f1;
+}
+
+* {
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+    user-drag: none;
+    -webkit-touch-callout: none;
+    -webkit-tap-highlight-color: transparent;
+    box-sizing: content-box;
+}
+
+a {
+    color: #f1f1f1;
+    text-decoration: none;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4em;
+    padding: 0.6em 0;
+    width: 100%;
+    font-weight: bold;
+    background-color: #999;
+    color: #f1f1f1;
+    border-radius: 8999px;
+    border: 0;
+    text-align: center;
+    font-size: 1.3em;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
+        rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+        rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    line-height: 1;
+    cursor: pointer;
+    transition: filter 0.2s;
+}
+.btn:active {
+    filter: brightness(76%);
+}
+
+@media (hover: hover) {
+    .btn:hover {
+        filter: brightness(76%);
+    }
+}
+.btn svg {
+    fill: #f1f1f1;
+    height: 1.3em;
+    vertical-align: middle;
+}
+.btn span {
+    vertical-align: middle;
+}
+
+.btn-container {
+    padding: 1.9em;
+    max-width: 555px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.9em;
+}
+
+.btn-subcontainer {
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+    width: 100%;
+}
+
+main {
+    max-width: 740px;
+    margin: 0 auto;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.main-carousel {
+    background-color: #000;
+}
+
+.carousel-cell {
+    width: 83%;
+    margin-right: 70px;
+}
+
+main > img,
+.carousel-cell img {
+    display: block;
+    width: 100%;
+}
