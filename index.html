@@ -8,15 +8,57 @@
     />
     <title>Millac Global Fair 152</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/flickity/3.0.0/flickity.min.css"
+      integrity="sha512-fJcFDOQo2+/Ke365m0NMCZt5uGYEWSxth3wg2i0dXu7A1jQfz9T4hdzz6nkzwmJdOdkcS8jmy2lWGaRXl+nFMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
-    <img src="images/1.jpg" alt="1" />
-    <img src="images/2.jpg" alt="2" />
-    <img src="images/3.jpg" alt="3" loading="lazy" />
-    <img src="images/4.jpg" alt="4" loading="lazy" />
-    <img src="images/5.jpg" alt="5" loading="lazy" />
-    <img src="images/6.jpg" alt="6" loading="lazy" />
-    <img src="images/7.jpg" alt="7" loading="lazy" />
-    <img src="images/8.jpg" alt="8" loading="lazy" />
+    <img src="images/1.jpg" />
+    <img src="images/2.jpg" />
+    <img src="images/3.jpg" loading="lazy" />
+    <img src="images/4.jpg" loading="lazy" />
+    <img src="images/5.jpg" loading="lazy" />
+    <img src="images/6.jpg" loading="lazy" />
+    <img src="images/7.jpg" loading="lazy" />
+    <div class="main-carousel">
+      <img src="images/8-1.jpg" class="carousel-cell" />
+      <img src="images/8-2.jpg" class="carousel-cell" />
+      <img src="images/8-3.jpg" class="carousel-cell" />
+      <img src="images/8-4.jpg" class="carousel-cell" />
+      <img src="images/8-5.jpg" class="carousel-cell" />
+      <img src="images/8-6.jpg" class="carousel-cell" />
+      <img src="images/8-7.jpg" class="carousel-cell" />
+      <img src="images/8-8.jpg" class="carousel-cell" />
+      <img src="images/8-9.jpg" class="carousel-cell" />
+      <img src="images/8-10.jpg" class="carousel-cell" />
+    </div>
+    <img src="images/9.jpg" loading="lazy" />
+    <img src="images/10.jpg" loading="lazy" />
+    <img src="images/11.jpg" loading="lazy" />
+    <img src="images/12.jpg" loading="lazy" />
+    <img src="images/13.jpg" loading="lazy" />
+    <img src="images/14.jpg" loading="lazy" />
+    <img src="images/15.jpg" loading="lazy" />
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/flickity/3.0.0/flickity.pkgd.min.js"
+      integrity="sha512-achKCfKcYJg0u0J7UDJZbtrffUwtTLQMFSn28bDJ1Xl9DWkl/6VDT3LMfVTo09V51hmnjrrOTbtg4rEgg0QArA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      var flkty = new Flickity(".main-carousel", {
+        wrapAround: true,
+        autoPlay: 1400,
+        pauseAutoPlayOnHover: false,
+        prevNextButtons: false,
+        pageDots: false,
+        lazyLoad: 2,
+      });
+    </script>
   </body>
 </html>

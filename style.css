@@ -3,12 +3,23 @@ body {
   margin: 0;
   padding: 0;
   color: #333;
-  background-color: #f4f4f4;
-}
-
-body > img {
-  display: block;
-  width: 100%;
   max-width: 740px;
   margin: 0 auto;
+  background-color: #f4f4f4;
+  box-sizing: content-box;
+  line-height: 0;
+}
+
+.main-carousel {
+  background-color: #000;
+}
+
+.carousel-cell {
+  width: 83%;
+  margin-right: 70px;
+}
+
+body > img,
+.carousel-cell img {
+  width: 100%;
 }
