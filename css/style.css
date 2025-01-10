@@ -50,15 +50,12 @@ a {
     cursor: pointer;
     transition: filter 0.2s;
 }
+
+.btn:hover,
 .btn:active {
     filter: brightness(76%);
 }
 
-@media (hover: hover) {
-    .btn:hover {
-        filter: brightness(76%);
-    }
-}
 .btn svg {
     fill: #f1f1f1;
     height: 1.3em;

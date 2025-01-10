@@ -15,7 +15,6 @@ const call = (phone) => {
         alert("휴대폰에서만 바로 전화통화가 가능합니다. 전화번호: " + phone);
         return;
     }
-
     location.href = "tel:" + phone;
 };
 
@@ -24,10 +23,5 @@ const sms = (phone) => {
         alert("휴대폰에서만 바로 문자전송이 가능합니다. 전화번호: " + phone);
         return;
     }
-
-    if (ua.device.vendor === "Apple") {
-        location.href = "sms:" + phone + "&body=" + content;
-    } else {
-        location.href = "sms:" + phone + "?body=" + content;
-    }
+    location.href = "sms:" + phone;
 };
