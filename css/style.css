@@ -91,6 +91,7 @@ main {
 
 .main-carousel {
     background-color: #000;
+    aspect-ratio: 18 / 19;
 }
 
 .carousel-cell {
