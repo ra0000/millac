@@ -70,6 +70,21 @@
             <img src="images/11.png" loading="lazy" />
             <img src="images/12.png" loading="lazy" />
             <img src="images/13.png" loading="lazy" />
+            <span class="date-container"
+                ><script>
+                    document.write(
+                        `· UPDATE ${new Date()
+                            .toLocaleDateString("en-gb", {
+                                timeZone: "Asia/Seoul",
+                                year: "numeric",
+                                month: "short",
+                                day: "numeric",
+                            })
+                            .replaceAll(" ", ". ")
+                            .toUpperCase()} ·`
+                    );
+                </script></span
+            >
             <img src="images/14.png" loading="lazy" />
             <img src="images/15.png" loading="lazy" />
 
