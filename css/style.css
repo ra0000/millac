@@ -6,6 +6,8 @@ body {
     height: 100%;
     background-color: #000;
     color: #f1f1f1;
+    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
+        "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 * {
@@ -91,7 +93,7 @@ main {
 
 .main-carousel {
     background-color: #000;
-    aspect-ratio: 18 / 19;
+    aspect-ratio: 8 / 9;
 }
 
 .carousel-cell {
